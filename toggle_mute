@@ -1,0 +1,12 @@
+#!/bin/bash
+# TODO: Only unmute relevant device (ie. speaker or headphone) and master. Max out speaker or master on unmute depending on whether headphones are connected
+# amixer set Master 1+ toggle
+# amixer set Master 1+ toggle
+a=$(amixer get Master | grep -q '\[on\]')
+if [[ $(amixer get Master | tail -2 | grep -c '\[on\]') == 1 ]]; then
+    amixer set Master 1+ toggle
+else
+    amixer set Master 1+ toggle
+    amixer set Headphone 1+ toggle
+    amixer set Speaker 1+ toggle
+fi
