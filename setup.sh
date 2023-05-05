@@ -1,3 +1,4 @@
+# Ansible setup: https://opensource.com/article/18/3/manage-workstation-ansible
 # TODO: Add flameshot
 #!/bin/bash
 BASE='Setup files'
