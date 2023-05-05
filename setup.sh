@@ -1,3 +1,4 @@
+# TODO: Add flameshot
 #!/bin/bash
 BASE='Setup files'
 DEFAULT_IFS=$IFS
@@ -23,6 +24,8 @@ printf "\n${BLUE}===>Installing xcompmgr (compositor)...${NC}\n"
 sudo apt install xcompmgr -y
 printf "\n${BLUE}===>Installing nitrogen (desktop background browser/setter)...${NC}\n"
 sudo apt install nitrogen -y
+printf "\n${BLUE}===>Installing dunst (notification daemon)...${NC}\n"
+sudo apt install dunst -y
 printf "\n${BLUE}===>Installing yakuake...${NC}\n"
 sudo apt install yakuake -y
 printf "\n${BLUE}===>Installing audio packages...${NC}\n"
