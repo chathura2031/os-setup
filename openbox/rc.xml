@@ -57,20 +57,20 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>sans</name>
-      <size>8</size>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
       <name>sans</name>
-      <size>8</size>
+      <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>italic</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
@@ -95,7 +95,7 @@
       <name>sans</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
       <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -104,9 +104,9 @@
       <name>sans</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>normal</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>italic</slant>
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
