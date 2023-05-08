@@ -1,5 +1,6 @@
 # Ansible setup: https://opensource.com/article/18/3/manage-workstation-ansible
 # TODO: Add flameshot
+# TODO: Add xfce4-whiskermenu-plugin
 #!/bin/bash
 BASE='Setup files'
 DEFAULT_IFS=$IFS
@@ -27,6 +28,7 @@ printf "\n${BLUE}===>Installing nitrogen (desktop background browser/setter)...$
 sudo apt install nitrogen -y
 printf "\n${BLUE}===>Installing dunst (notification daemon)...${NC}\n"
 sudo apt install dunst -y
+sudo apt install libnotify -y
 printf "\n${BLUE}===>Installing yakuake...${NC}\n"
 sudo apt install yakuake -y
 printf "\n${BLUE}===>Installing audio packages...${NC}\n"
