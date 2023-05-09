@@ -1,6 +1,5 @@
 # Ansible setup: https://opensource.com/article/18/3/manage-workstation-ansible
 # TODO: Add flameshot
-# TODO: Add xfce4-whiskermenu-plugin
 #!/bin/bash
 BASE='Setup files'
 DEFAULT_IFS=$IFS
@@ -33,11 +32,7 @@ printf "\n${BLUE}===>Installing yakuake...${NC}\n"
 sudo apt install yakuake -y
 printf "\n${BLUE}===>Installing audio packages...${NC}\n"
 sudo apt install pavucontrol -y
-# TODO: Figure out how to control audio through cli using pacmd
-# These a not needed?:
-# sudo apt install linux-sound-base -y
-# sudo apt install alsa-base -y
-# sudo apt install alsa-utils -y # using as a replacement to pulseaudio
+sudo apt install alsa-base -y
 printf "\n${BLUE}===>Installing xbacklight (brightness controller)...${NC}\n"
 sudo apt install xbacklight -y
 printf "\n${BLUE}===>Installing thunar (file manager)...${NC}\n"
