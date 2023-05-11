@@ -9,7 +9,7 @@ notify() {
     echo $(($volume/$divisor))
     filled_bar=$(seq -s "█" $(($volume/$divisor)) | sed 's/[0-9]//g')
     unfilled_bar=$(seq -s "⠀" $(($bar_count - $volume/$divisor)) | sed 's/[0-9]//g')
-    notify-send " $filled_bar$unfilled_bar    $volume%" -i $icon_name -t 2000
+    dunstify " $filled_bar$unfilled_bar    $volume%" -i $icon_name -t 2000 -r 555
 }
 
 # Set the volume of the individual devices to max
