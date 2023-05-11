@@ -57,20 +57,20 @@
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>sans</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
       <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
       <name>sans</name>
-      <size>9</size>
+      <size>8</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>italic</slant>
+      <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
@@ -95,7 +95,7 @@
       <name>sans</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
       <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
@@ -104,9 +104,9 @@
       <name>sans</name>
       <size>9</size>
       <!-- font size in points -->
-      <weight>normal</weight>
+      <weight>bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>italic</slant>
+      <slant>normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
@@ -273,24 +273,24 @@
     <!-- Keybinding for start menu  -->
     <keybind key="Super_L">
       <action name="Execute">
-	<command>start_menu</command>
+        <command>start_menu</command>
       </action>
     </keybind>
 
     <!-- Keybindings for volume control  -->
     <keybind key="XF86AudioMute">
       <action name="Execute">
-        <command>toggle_mute</command>
+        <command>volume_control mute</command>
       </action>
     </keybind>
     <keybind key="XF86AudioRaiseVolume">
       <action name="Execute">
-        <command>amixer set Master 5%+ unmute</command>
+        <command>volume_control inc</command>
       </action>
     </keybind>
     <keybind key="XF86AudioLowerVolume">
       <action name="Execute">
-        <command>amixer set Master 5%- unmute</command>
+        <command>volume_control dec</command>
       </action>
     </keybind>
     <!-- Keybinding for brightness control -->

@@ -1,4 +1,5 @@
 # Ansible setup: https://opensource.com/article/18/3/manage-workstation-ansible
+# TODO: Delete ~/.config/openbox if it exists (overrides the one in /etc/xdg)
 # TODO: Add flameshot
 #!/bin/bash
 BASE='Setup files'
