@@ -1,6 +1,9 @@
 # Ansible setup: https://opensource.com/article/18/3/manage-workstation-ansible
+# Install lxappearance (gtk themeing manager) qt5ct  (qt themeing manager)
+# Install arc-theme and setup using lxappearance
 # TODO: Delete ~/.config/openbox if it exists (overrides the one in /etc/xdg)
 # TODO: Add flameshot
+# TODO: Download https://www.gnome-look.org/p/1348081 and move to ~/.icons
 #!/bin/bash
 BASE='Setup files'
 DEFAULT_IFS=$IFS
@@ -104,10 +107,13 @@ cp -vr ulauncher/ ~/.config/
 timedatectl set-timezone Australia/ACT
 
 # Setup start menu
-sudo cp -v start_menu /usr/sbin/
-sudo chmod +x /usr/sbin/start_menu
+sudo cp -v start_menu /usr/bin/
+sudo chmod +x /usr/bin/start_menu
 
 # Setup muting script
-sudo cp -v toggle_mute /usr/sbin/
-sudo chmod +x /usr/sbin/toggle_mute
+sudo cp -v toggle_mute /usr/bin/
+sudo chmod +x /usr/bin/toggle_mute
+
+# Setup volume control
+sudo cp -v volume_control /usr/
 # lxpolkit

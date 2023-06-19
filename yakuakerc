@@ -36,3 +36,4 @@ view-full-screen=none
 
 [Window]
 Height=66
+KeepOpen=false
