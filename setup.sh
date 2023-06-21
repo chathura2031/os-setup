@@ -4,6 +4,7 @@
 # TODO: Delete ~/.config/openbox if it exists (overrides the one in /etc/xdg)
 # TODO: Add flameshot
 # TODO: Download https://www.gnome-look.org/p/1348081 and move to ~/.icons
+# TODO: Run `code --install-extension vscodevim.vim` to install vim in vscode
 #!/bin/bash
 BASE='Setup files'
 DEFAULT_IFS=$IFS

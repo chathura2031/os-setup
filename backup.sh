@@ -31,3 +31,12 @@ cp -v /usr/sbin/start_menu .
 
 # Backup muting script
 cp -v /usr/sbin/toggle_mute .
+
+# Backup vscode settings
+cp -v  ~/.config/Code/User/settings.json .
+
+# Backup jgmenu settings
+cp -v ~/.config/jgmenu/jgmenurc .
+
+# Backup chromium settings
+cp -v ~/.var/app/com.github.Eloston.UngoogledChromium/config/chromium/Default/Preferences .
